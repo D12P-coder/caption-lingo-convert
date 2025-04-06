@@ -10,7 +10,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { parseCaption, formatToSRT, formatToVTT } from '@/utils/captionParser';
 import { translateCaptions } from '@/utils/translateService';
-import { toast } from '@/components/ui/sonner';
+import { toast } from '@/utils/toast';
 import { ArrowRightCircle, Download } from 'lucide-react';
 
 interface Caption {

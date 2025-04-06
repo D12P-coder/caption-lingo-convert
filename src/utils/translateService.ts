@@ -1,5 +1,4 @@
-
-import { toast } from '@/components/ui/sonner';
+import { toast } from '@/utils/toast';
 
 interface Caption {
   id: number;
