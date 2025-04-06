@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { 
   Select,
@@ -37,6 +36,15 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
     { code: 'zh', name: 'Chinese' },
     { code: 'ar', name: 'Arabic' },
     { code: 'hi', name: 'Hindi' },
+    { code: 'te', name: 'Telugu' },
+    { code: 'ta', name: 'Tamil' },
+    { code: 'ml', name: 'Malayalam' },
+    { code: 'kn', name: 'Kannada' },
+    { code: 'bn', name: 'Bengali' },
+    { code: 'gu', name: 'Gujarati' },
+    { code: 'mr', name: 'Marathi' },
+    { code: 'pa', name: 'Punjabi' },
+    { code: 'or', name: 'Odia' }
   ];
 
   return (

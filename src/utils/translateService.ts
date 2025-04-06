@@ -1,3 +1,4 @@
+
 import { toast } from '@/utils/toast';
 
 interface Caption {
@@ -49,6 +50,27 @@ export const translateCaptions = async (captions: Caption[], targetLanguage: str
         'Thank you': 'ありがとう',
         'Good morning': 'おはようございます',
         'See you later': 'また後で',
+      },
+      'te': {
+        'Hello': 'హలో',
+        'How are you?': 'మీరు ఎలా ఉన్నారు?',
+        'Thank you': 'ధన్యవాదాలు',
+        'Good morning': 'శుభోదయం',
+        'See you later': 'తరువాత కలుద్దాం',
+      },
+      'hi': {
+        'Hello': 'नमस्ते',
+        'How are you?': 'आप कैसे हैं?',
+        'Thank you': 'धन्यवाद',
+        'Good morning': 'सुप्रभात',
+        'See you later': 'फिर मिलेंगे',
+      },
+      'ta': {
+        'Hello': 'வணக்கம்',
+        'How are you?': 'நீங்கள் எப்படி இருக்கிறீர்கள்?',
+        'Thank you': 'நன்றி',
+        'Good morning': 'காலை வணக்கம்',
+        'See you later': 'பிறகு பார்க்கலாம்',
       },
     };
 
