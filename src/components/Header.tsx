@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { FileText } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -10,18 +11,25 @@ const Header = () => {
           <div className="w-10 h-10 rounded-lg gradient-bg flex items-center justify-center">
             <FileText className="text-white" size={20} />
           </div>
-          <h1 className="text-2xl font-bold bg-clip-text text-transparent gradient-bg">CaptionLingo</h1>
+          <Link to="/">
+            <h1 className="text-2xl font-bold bg-clip-text text-transparent gradient-bg">CaptionLingo</h1>
+          </Link>
         </div>
         <nav>
           <ul className="flex gap-6">
             <li>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                GitHub
-              </a>
+              <Link to="/portfolio" className="text-sm hover:text-primary transition-colors">
+                Wedding Portfolio
+              </Link>
             </li>
             <li>
-              <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                About
+              <Link to="/movie-audio-converter" className="text-sm hover:text-primary transition-colors">
+                Audio Converter
+              </Link>
+            </li>
+            <li>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                GitHub
               </a>
             </li>
           </ul>
