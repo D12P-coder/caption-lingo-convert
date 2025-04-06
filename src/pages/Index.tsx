@@ -1,4 +1,5 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import FileUpload from '@/components/FileUpload';
 import LanguageSelector from '@/components/LanguageSelector';
@@ -6,10 +7,12 @@ import { Button } from '@/components/ui/button';
 import { toast } from '@/utils/toast';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { parseCaption } from '@/utils/captionParser';
+import { parseCaption, formatToSRT, formatToVTT } from '@/utils/captionParser';
 import { translateCaptions } from '@/utils/translateService';
 import CaptionPreview from '@/components/CaptionPreview';
-import { Music, Languages } from 'lucide-react';
+import { Music, Languages, Download, ArrowRightCircle } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
+import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 
 interface Caption {
   id: number;
